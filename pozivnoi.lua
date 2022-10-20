@@ -35,11 +35,11 @@ local nicks = { -- [''] = '',
   ['Shredder_Rose'] = 'Роза',
   ['Pull_Krove'] = 'Кадеин',
   ['Lucas_Stoun'] = 'Бурбон',
+  ['Tetsuro Takimoto'] = 'Висп',
   ['Roberto_Asaro'] = 'Слесарь',
   ['Azim_Kenes'] = 'Довакин',
   ['Stuart_Desiderio'] = 'Туман',
   ['Saints_Gavaets'] = 'Рысь',
-  ['Tetsuro_Takimoto'] = 'Висп',
   ['Squeze_Syntax'] = 'Шиша',
   ['Serand_Calebron'] = 'Калибр'
 }

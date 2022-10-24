@@ -1,67 +1,67 @@
---Update: Обновил позывные/состав
--- Информация о скрипте
-script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.16) 						            -- Указываем версию скрипта / FINAL
-script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
+--Update: ГЋГЎГ­Г®ГўГЁГ« ГЇГ®Г§Г»ГўГ­Г»ГҐ/Г±Г®Г±ГІГ Гў
+-- Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї Г® Г±ГЄГ°ГЁГЇГІГҐ
+script_name('В«Auto-DokladВ»') 		                    -- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГЁГ¬Гї Г±ГЄГ°ГЁГЇГІГ 
+script_version(4.17) 						            -- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГўГҐГ°Г±ГЁГѕ Г±ГЄГ°ГЁГЇГІГ  / FINAL
+script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Г“ГЄГ Г§Г»ГўГ ГҐГ¬ ГЁГ¬Гї Г ГўГІГ®Г°Г 
 
--- Библиотеки
+-- ГЃГЁГЎГ«ГЁГ®ГІГҐГЄГЁ
 require 'lib.moonloader'
 require 'lib.sampfuncs'
 local dlstatus = require('moonloader').download_status
 
 
--- Позывные
+-- ГЏГ®Г§Г»ГўГ­Г»ГҐ
 local nicks = { -- [''] = '',
 -- 12+
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Lattice'] = 'Латте', -- Подполковник.
--- Ком. состав.
-  ['Blayzex_Stoun'] = 'Медведь', -- Командир.
-  ['Sergey_Fibo'] = 'Панда', -- Куратор.
+  ['Cross_Dacota'] = 'Г„Г°Г ГЄГ®', -- ГЏГ®Г¤ГЇГ®Г«ГЄГ®ГўГ­ГЁГЄ.
+  ['Vlad_Werber'] = 'ГЋГЄГіГ­Гј', -- ГЊГ Г©Г®Г°.
+  ['Alex_Lattice'] = 'Г‹Г ГІГІГҐ', -- ГЏГ®Г¤ГЇГ®Г«ГЄГ®ГўГ­ГЁГЄ.
+-- ГЉГ®Г¬. Г±Г®Г±ГІГ Гў.
+  ['Blayzex_Stoun'] = 'ГЊГҐГ¤ГўГҐГ¤Гј', -- ГЉГ®Г¬Г Г­Г¤ГЁГ°.
+  ['Sergey_Fibo'] = 'ГЏГ Г­Г¤Г ', -- ГЉГіГ°Г ГІГ®Г°.
   
--- Бойцы.
-  ['Nolik_Quiles'] = 'Ноль',
+-- ГЃГ®Г©Г¶Г».
+  ['Nolik_Quiles'] = 'ГЌГ®Г«Гј',
   
--- Стажеры.
-  ['Fara_Rest'] = 'Фара',
-  ['Ace_Derden'] = 'Эйс',
-  ['Sentinell_Cunningham'] = 'Гуль',
-  ['Nathan_Impossible'] = 'Травка',
-  ['Benedict_Bradberry'] = 'Беня',
-  ['Nikolay_Christenson'] = 'Гугл',
-  ['Oscar_Sanchez'] = 'Тайфун',
-  ['Romario_Nax'] = 'Нах',
-  ['Shredder_Rose'] = 'Роза',
-  ['Pull_Krove'] = 'Кадеин',
-  ['David_Lovecraft'] = 'Лав',
-  ['Lucas_Stoun'] = 'Бурбон',
-  ['Loonklage_Revolution'] = 'Мышка',
-  ['Azim_Kenes'] = 'Довакин',
-  ['Roberto_Asaro'] = 'Слесарь',
-  ['Stuart_Desiderio'] = 'Туман',
-  ['Saints_Gavaets'] = 'Рысь',
-  ['Ryuga_Yamamoto'] = 'Висп',
-  ['Squeze_Syntax'] = 'Шиша',
-  ['Serand_Calebron'] = 'Калибр'
+-- Г‘ГІГ Г¦ГҐГ°Г».
+  ['Fara_Rest'] = 'Г”Г Г°Г ',
+  ['Ace_Derden'] = 'ГќГ©Г±',
+  ['Sentinell_Cunningham'] = 'ГѓГіГ«Гј',
+  ['Nathan_Impossible'] = 'Г’Г°Г ГўГЄГ ',
+  ['Benedict_Bradberry'] = 'ГЃГҐГ­Гї',
+  ['Nikolay_Christenson'] = 'ГѓГіГЈГ«',
+  ['Oscar_Sanchez'] = 'Г’Г Г©ГґГіГ­',
+  ['Romario_Nax'] = 'ГЌГ Гµ',
+  ['Shredder_Rose'] = 'ГђГ®Г§Г ',
+  ['Pull_Krove'] = 'ГЉГ Г¤ГҐГЁГ­',
+  ['David_Lovecraft'] = 'Г‹Г Гў',
+  ['Lucas_Stoun'] = 'ГЃГіГ°ГЎГ®Г­',
+  ['Loonklage_Revolution'] = 'ГЊГ»ГёГЄГ ',
+  ['Azim_Kenes'] = 'Г„Г®ГўГ ГЄГЁГ­',
+  ['Roberto_Asaro'] = 'Г‘Г«ГҐГ±Г Г°Гј',
+  ['Stuart_Desiderio'] = 'Г’ГіГ¬Г Г­',
+  ['Saints_Gavaets'] = 'ГђГ»Г±Гј',
+  ['Ryuga_Yamamoto'] = 'Г‚ГЁГ±ГЇ',
+  ['Squeze_Syntax'] = 'ГГЁГёГ ',
+  ['Serand_Calebron'] = 'ГЉГ Г«ГЁГЎГ°'
 }
 
 function main()
   
-  -- Проверяем загружен ли sampfuncs и SAMP если не загружены - возвращаемся к началу
+  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГЈГ°ГіГ¦ГҐГ­ Г«ГЁ sampfuncs ГЁ SAMP ГҐГ±Г«ГЁ Г­ГҐ Г§Г ГЈГ°ГіГ¦ГҐГ­Г» - ГўГ®Г§ГўГ°Г Г№Г ГҐГ¬Г±Гї ГЄ Г­Г Г·Г Г«Гі
 	if not isSampfuncsLoaded() or not isSampLoaded() then return end
-  -- Проверяем загружен ли SA-MP
+  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГЈГ°ГіГ¦ГҐГ­ Г«ГЁ SA-MP
 	while not isSampAvailable() do wait(100) end
-  -- Сообщаем об загрузке скрипта
-  stext('Скрипт успешно загружен!')
+  -- Г‘Г®Г®ГЎГ№Г ГҐГ¬ Г®ГЎ Г§Г ГЈГ°ГіГ§ГЄГҐ Г±ГЄГ°ГЁГЇГІГ 
+  stext('Г‘ГЄГ°ГЁГЇГІ ГіГ±ГЇГҐГёГ­Г® Г§Г ГЈГ°ГіГ¦ГҐГ­!')
   
-  -- Регистрируем команду
+  -- ГђГҐГЈГЁГ±ГІГ°ГЁГ°ГіГҐГ¬ ГЄГ®Г¬Г Г­Г¤Гі
   sampRegisterChatCommand('dok', cmd_dok)
-  -- Проверяем зашёл ли игрок на сервер
+  -- ГЏГ°Г®ГўГҐГ°ГїГҐГ¬ Г§Г ГёВёГ« Г«ГЁ ГЁГЈГ°Г®ГЄ Г­Г  Г±ГҐГ°ГўГҐГ°
 	while not sampIsLocalPlayerSpawned() do wait(0) end
-	-- Проверка на автозагрузку.
+	-- ГЏГ°Г®ГўГҐГ°ГЄГ  Г­Г  Г ГўГІГ®Г§Г ГЈГ°ГіГ§ГЄГі.
   updateScript()
-  -- Бесконечный цикл для постоянной работы скрипта
+  -- ГЃГҐГ±ГЄГ®Г­ГҐГ·Г­Г»Г© Г¶ГЁГЄГ« Г¤Г«Гї ГЇГ®Г±ГІГ®ГїГ­Г­Г®Г© Г°Г ГЎГ®ГІГ» Г±ГЄГ°ГЁГЇГІГ 
   while true do
     wait(0)
   end
@@ -100,26 +100,26 @@ function cmd_dok(args)
         sampProcessChatInput(string.format('/r 10-%s, solo.', args))
       end
     else
-      atext('{808080}Информация | {FFFFFF}Введите: /dok тен-код.')
+      atext('{808080}Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї | {FFFFFF}Г‚ГўГҐГ¤ГЁГІГҐ: /dok ГІГҐГ­-ГЄГ®Г¤.')
       return
     end
   else
-    atext('{808080}Ошибка | {FFFFFF}Вы не сидите в транспорте.')
+    atext('{808080}ГЋГёГЁГЎГЄГ  | {FFFFFF}Г‚Г» Г­ГҐ Г±ГЁГ¤ГЁГІГҐ Гў ГІГ°Г Г­Г±ГЇГ®Г°ГІГҐ.')
     return
   end
 end
 
--- «Auto-Report» text
+-- В«Auto-ReportВ» text
 function stext(text)
   sampAddChatMessage((' %s {FFFFFF}%s'):format(script.this.name, text), 0xABAFDE)
 end
 
--- » text
+-- В» text
 function atext(text)
-	sampAddChatMessage((' » {FFFFFF}%s'):format(text), 0xABAFDE)
+	sampAddChatMessage((' В» {FFFFFF}%s'):format(text), 0xABAFDE)
 end
 
--- Авто-обновление
+-- ГЂГўГІГ®-Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ
 function updateScript()
 	local filepath = os.getenv('TEMP') .. '\\online-update.json'
 	downloadUrlToFile('https://raw.githubusercontent.com/DianO4ka228/erp-script/main/online-update.json', filepath, function(id, status, p1, p2)
@@ -131,17 +131,17 @@ function updateScript()
 				if info and info.latest then
 					if tonumber(thisScript().version) < tonumber(info.latest) then
 						lua_thread.create(function()
-							print('Началось скачивание обновления. Скрипт перезагрузится через пару секунд.')
+							print('ГЌГ Г·Г Г«Г®Г±Гј Г±ГЄГ Г·ГЁГўГ Г­ГЁГҐ Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї. Г‘ГЄГ°ГЁГЇГІ ГЇГҐГ°ГҐГ§Г ГЈГ°ГіГ§ГЁГІГ±Гї Г·ГҐГ°ГҐГ§ ГЇГ Г°Гі Г±ГҐГЄГіГ­Г¤.')
 							wait(300)
 							downloadUrlToFile(updatelink, thisScript().path, function(id3, status1, p13, p23)
-								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('Обновление успешно скачано и установлено.')
-								elseif status1 == 64 then print('Обновление успешно скачано и установлено.')
+								if status1 == dlstatus.STATUS_ENDDOWNLOADDATA then print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГіГ±ГЇГҐГёГ­Г® Г±ГЄГ Г·Г Г­Г® ГЁ ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г®.')
+								elseif status1 == 64 then print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГҐ ГіГ±ГЇГҐГёГ­Г® Г±ГЄГ Г·Г Г­Г® ГЁ ГіГ±ГІГ Г­Г®ГўГ«ГҐГ­Г®.')
 								end
 							end)
 						end)
-					else print('Обновлений скрипта не обнаружено.') end
+					else print('ГЋГЎГ­Г®ГўГ«ГҐГ­ГЁГ© Г±ГЄГ°ГЁГЇГІГ  Г­ГҐ Г®ГЎГ­Г Г°ГіГ¦ГҐГ­Г®.') end
 				end
-			else print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
-		elseif status == 64 then print('Проверка обновления прошла неуспешно. Запускаю старую версию.') end
+			else print('ГЏГ°Г®ГўГҐГ°ГЄГ  Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї ГЇГ°Г®ГёГ«Г  Г­ГҐГіГ±ГЇГҐГёГ­Г®. Г‡Г ГЇГіГ±ГЄГ Гѕ Г±ГІГ Г°ГіГѕ ГўГҐГ°Г±ГЁГѕ.') end
+		elseif status == 64 then print('ГЏГ°Г®ГўГҐГ°ГЄГ  Г®ГЎГ­Г®ГўГ«ГҐГ­ГЁГї ГЇГ°Г®ГёГ«Г  Г­ГҐГіГ±ГЇГҐГёГ­Г®. Г‡Г ГЇГіГ±ГЄГ Гѕ Г±ГІГ Г°ГіГѕ ГўГҐГ°Г±ГЁГѕ.') end
 	end)
 end

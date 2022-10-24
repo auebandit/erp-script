@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.17) 						            -- Указываем версию скрипта / FINAL
+script_version(4.16) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -32,16 +32,16 @@ local nicks = { -- [''] = '',
   ['Nikolay_Christenson'] = 'Гугл',
   ['Oscar_Sanchez'] = 'Тайфун',
   ['Romario_Nax'] = 'Нах',
-  ['David_Lovecraft'] = 'Лав',
-  ['Loonklage_Revolution'] = 'Мышка',
   ['Shredder_Rose'] = 'Роза',
   ['Pull_Krove'] = 'Кадеин',
+  ['David_Lovecraft'] = 'Лав',
   ['Lucas_Stoun'] = 'Бурбон',
-  ['Ryuga Takimoto'] = 'Висп',
-  ['Roberto_Asaro'] = 'Слесарь',
+  ['Loonklage_Revolution'] = 'Мышка',
   ['Azim_Kenes'] = 'Довакин',
+  ['Roberto_Asaro'] = 'Слесарь',
   ['Stuart_Desiderio'] = 'Туман',
   ['Saints_Gavaets'] = 'Рысь',
+  ['Ryuga_Yamamoto'] = 'Висп',
   ['Squeze_Syntax'] = 'Шиша',
   ['Serand_Calebron'] = 'Калибр'
 }

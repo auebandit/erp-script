@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.27) 						            -- Указываем версию скрипта / FINAL
+script_version(4.28) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -21,10 +21,10 @@ local nicks = { -- [''] = '',
   ['Sergey_Fibo'] = 'Панда', -- Куратор.
   
 -- Бойцы.
-  ['Nolik_Quiles'] = 'Ноль',
+  ['Fladimir_Fibo'] = 'Ноль',
   
 -- Стажеры.
-  ['Fara_Rest'] = 'Фара',
+  ['Anthony_Murray'] = 'Муравей',
   ['Ace_Derden'] = 'Эйс',
   ['Sentinell_Cunningham'] = 'Гуль',
   ['Nathan_Impossible'] = 'Травка',
@@ -46,9 +46,11 @@ local nicks = { -- [''] = '',
   ['Roberto_Asaro'] = 'Слесарь',
   ['Stuart_Desiderio'] = 'Туман',
   ['Kel_Spencer'] = 'Дед',
-  ['Saints_Gavaets'] = 'Рысь',
   ['Monica_Rodgers'] = 'Моня',
   ['Dasha_Bitkova'] = 'Боевая',
+  ['Joj Hoffman'] = 'Абат',
+  ['Anthony_Morenno'] = 'Невермор',
+  ['Derek_Lightwood'] = 'Бледный',
   ['Ryuga_Yamamoto'] = 'Висп',
   ['Squeze_Syntax'] = 'Шиша',
   ['Frank_Raven'] = 'Ворон',

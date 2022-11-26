@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.31) 						            -- Указываем версию скрипта / FINAL
+script_version(4.32) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,51 +13,37 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Lattice'] = 'Латте', -- Подполковник.
+  ['Sergey_Fibo'] = 'Панда', -- Генерал.
+  ['Vlad_Werber'] = 'Окунь', -- Полковник.
+  ['Vladimir_Fibo'] = 'Ноль', -- Майор.
+
 -- Ком. состав.
-  ['Blayzex_Stoun'] = 'Медведь', -- Командир.
-  ['Sergey_Fibo'] = 'Панда', -- Куратор.
+  ['Blayzex_Stoun'] = 'Медведь', -- Ex-Commander.
+  ['Benedict_Bradberry'] = 'Беня', -- Commander of SOBR.
+  ['Roberto_Asaro'] = 'Слесарь', -- Deputy Commander of SOBR
+  ['Lucas_Stoun'] = 'Бурбон', -- Deputy Commander of SOBR
+  ['Oscar_Sanchez'] = 'Тайфун', -- Operative
+  ['Romario_Nax'] = 'Нах', -- Operative
+  ['David_Lovecraft'] = 'Лав', -- Operative
+  ['Sketch_Phasewalker'] = 'Изолента', -- Operative
   
 -- Бойцы.
-  ['Vladimir_Fibo'] = 'Ноль',
+  ['Derek_Lightwood'] = 'Бледный',
+  ['Andrey_Hamurov'] = 'Дрон',
+  ['Anthony_Murray'] = 'Муравей',
+  ['Anthony_Morenno'] = 'Невермор',
+  ['Dasha_Bitkova'] = 'Боевая',
+  ['Squeze_Syntax'] = 'Шиша',
+  ['Monica_Rodgers'] = 'Моня',
+  ['Jo_Bax'] = 'Бакс',
   
 -- Стажеры.
-  ['Anthony_Murray'] = 'Муравей',
-  ['Danilka_Gol'] = 'Вескер',
-  ['Renya_Stoun'] = 'Татарчонок',
   ['Lenny_Snart'] = 'Небо',
-  ['Ace_Derden'] = 'Эйс',
-  ['Improove_Herbenger'] = 'Прокоп',
-  ['Sentinell_Cunningham'] = 'Гуль',
-  ['Nathan_Impossible'] = 'Травка',
-  ['Benedict_Bradberry'] = 'Беня',
-  ['Nikolay_Christenson'] = 'Гугл',
-  ['Oscar_Sanchez'] = 'Тайфун',
-  ['Romario_Nax'] = 'Нах',
-  ['Shredder_Rose'] = 'Роза',
-  ['Pull_Krove'] = 'Кадеин',
-  ['David_Lovecraft'] = 'Лав',
-  ['Lucas_Stoun'] = 'Бурбон',
-  ['Jonathan_Intro'] = 'Арсенал',
-  ['Sketch_Phasewalker'] = 'Изолента',
-  ['Jo_Bax'] = 'Бакс',
-  ['Benjamin_Kot'] = 'Кот',
-  ['Andrey_Hamurov'] = 'Дрон',
-  ['Loonklage_Revolution'] = 'Мышка',
-  ['Azim_Kenes'] = 'Довакин',
-  ['Roberto_Asaro'] = 'Слесарь',
-  ['Stuart_Desiderio'] = 'Туман',
-  ['Kel_Spencer'] = 'Дед',
-  ['Monica_Rodgers'] = 'Моня',
-  ['Dasha_Bitkova'] = 'Боевая',
-  ['Joj Hoffman'] = 'Абат',
-  ['Anthony_Morenno'] = 'Невермор',
-  ['Derek_Lightwood'] = 'Бледный',
-  ['Ryuga_Yamamoto'] = 'Висп',
-  ['Squeze_Syntax'] = 'Шиша',
-  ['Frank_Raven'] = 'Ворон',
+  ['Matthew_Busquets'] = 'Крол',
+  ['Renya_Stoun'] = 'Татарчонок',
+  ['Danilka_Gol'] = 'Вескер',
+  ['Improove Herbenger'] = 'Прокоп',
+  ['Eve_Undefeated'] = 'Вино',
   ['Serand_Calebron'] = 'Калибр'
 }
 

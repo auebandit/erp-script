@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.33) 						            -- Указываем версию скрипта / FINAL
+script_version(4.34) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -26,6 +26,7 @@ local nicks = { -- [''] = '',
 -- Стажеры.
   ['Anthony_Murray'] = 'Муравей',
   ['Vladislav_Saviour'] = 'Гатс',
+  ['Sketch_Phasewalker'] = 'Скотч',
   ['Eve_Undefeated'] = 'Вино',
   ['Matthew_Busquets'] = 'Крол',
   ['Danilka_Gol'] = 'Вескер',
@@ -34,7 +35,6 @@ local nicks = { -- [''] = '',
   ['Ace_Derden'] = 'Эйс',
   ['Improove_Herbenger'] = 'Прокоп',
   ['Sentinell_Cunningham'] = 'Гуль',
-  ['Nathan_Impossible'] = 'Травка',
   ['Benedict_Bradberry'] = 'Беня',
   ['Nikolay_Christenson'] = 'Гугл',
   ['Oscar_Sanchez'] = 'Тайфун',
@@ -44,7 +44,6 @@ local nicks = { -- [''] = '',
   ['David_Lovecraft'] = 'Лав',
   ['Lucas_Stoun'] = 'Бурбон',
   ['Jonathan_Intro'] = 'Арсенал',
-  ['Sketch_Phasewalker'] = 'Изолента',
   ['Jo_Bax'] = 'Бакс',
   ['Benjamin_Kot'] = 'Кот',
   ['Andrey_Hamurov'] = 'Дрон',

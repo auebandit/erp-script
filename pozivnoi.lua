@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.45) 						            -- Указываем версию скрипта / FINAL
+script_version(4.46) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,68 +13,37 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
-  ['Cross_Dacota'] = 'Драко', -- Подполковник.
-  ['Vlad_Werber'] = 'Окунь', -- Майор.
-  ['Alex_Lattice'] = 'Латте', -- Подполковник.
 -- Ком. состав.
   ['Blayzex_Stoun'] = 'Медведь', -- Командир.
-  ['Sergey_Fibo'] = 'Панда', -- Куратор.
   
 -- Бойцы.
   ['Vladimir_Fibo'] = 'Ноль',
   
 -- Стажеры.
-  ['Vova_Kotov'] = 'Кот',
   ['Cosmos_Kholmogorov'] = 'Афганец',
   ['Curtis_Clark'] = 'Брат',
   ['Rick_Russell'] = 'Хинкал',
   ['Waffles_Exe'] = 'Вафля',
   ['Andrew_Midnight'] = 'Полночь',
-  ['Maximiliano_Stoun'] = 'Компот',
   ['Vyacheslav_Lisov'] = 'Лис',
   ['Kenny_White'] = 'Белый',
   ['Yarikz_Stoun'] = 'Псих',
-  ['Aleksej_Mironov'] = 'Доктор',
-  ['Sheogorat_Daedric'] = 'Мельник',
   ['Aitesu_Matsumoto'] = 'Скай',
-  ['Adam_Rockwells'] = 'Русалка',
-  ['Shizuoka_Phasewalker'] = 'Шизу',
-  ['Vladislav_Saviour'] = 'Гатс',
   ['Sketch_Phasewalker'] = 'Скотч',
   ['Eve_Undefeated'] = 'Вино',
   ['Matthew_Busquets'] = 'Крол',
   ['Danilka_Gol'] = 'Вескер',
   ['Renya_Stoun'] = 'Татарчонок',
   ['Lenny_Snart'] = 'Небо',
-  ['Ace_Derden'] = 'Эйс',
-  ['Improove_Herbenger'] = 'Прокоп',
-  ['Sentinell_Cunningham'] = 'Гуль',
   ['Benedict_Bradberry'] = 'Беня',
-  ['Nikolay_Christenson'] = 'Гугл',
   ['Oscar_Sanchez'] = 'Тайфун',
   ['Romario_Nax'] = 'Нах',
-  ['Shredder_Rose'] = 'Роза',
-  ['Pull_Krove'] = 'Кадеин',
   ['David_Lovecraft'] = 'Лав',
   ['Lucas_Stoun'] = 'Бурбон',
-  ['Jonathan_Intro'] = 'Арсенал',
   ['Jo_Bax'] = 'Бакс',
-  ['Benjamin_Kot'] = 'Кот',
-  ['Andrey_Hamurov'] = 'Дрон',
-  ['Loonklage_Revolution'] = 'Мышка',
-  ['Azim_Kenes'] = 'Довакин',
   ['Roberto_Asaro'] = 'Слесарь',
-  ['Stuart_Desiderio'] = 'Туман',
-  ['Kel_Spencer'] = 'Дед',
-  ['Monica_Rodgers'] = 'Моня',
-  ['Dasha_Bitkova'] = 'Боевая',
-  ['Joj Hoffman'] = 'Абат',
-  ['Anthony_Morenno'] = 'Невермор',
-  ['Derek_Lightwood'] = 'Бледный',
-  ['Ryuga_Yamamoto'] = 'Висп',
-  ['Squeze_Syntax'] = 'Шиша',
-  ['Frank_Raven'] = 'Ворон',
-  ['Serand_Calebron'] = 'Калибр'
+  ['Serand_Calebron'] = 'Калибр',
+  ['Jacob_Yaroha'] = 'Ярохич'
 }
 
 function main()

@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.48) 						            -- Указываем версию скрипта / FINAL
+script_version(4.49) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -24,19 +24,15 @@ local nicks = { -- [''] = '',
   ['Curtis_Clark'] = 'Брат',
   ['Rick_Russell'] = 'Хинкал',
   ['Waffles_Exe'] = 'Вафля',
-  ['Andrew_Midnight'] = 'Полночь',
   ['Vyacheslav_Lisov'] = 'Лис',
-  ['Kenny_White'] = 'Белый',
   ['Yarikz_Stoun'] = 'Псих',
   ['Aitesu_Matsumoto'] = 'Скай',
   ['Eve_Undefeated'] = 'Вино',
   ['Matthew_Busquets'] = 'Крол',
-  ['Danilka_Gol'] = 'Вескер',
   ['Renya_Stoun'] = 'Татарчонок',
   ['Lenny_Snart'] = 'Небо',
   ['Benedict_Bradberry'] = 'Беня',
   ['Oscar_Sanchez'] = 'Тайфун',
-  ['Romario_Nax'] = 'Нах',
   ['David_Lovecraft'] = 'Лав',
   ['Lucas_Stoun'] = 'Бурбон',
   ['Jo_Bax'] = 'Бакс',
@@ -44,7 +40,9 @@ local nicks = { -- [''] = '',
   ['Serand_Calebron'] = 'Калибр',
   ['Jacob_Yaroha'] = 'Ярохич',
   ['Sam_Finn'] = 'Задира',
-  ['Elly_Houdini'] = 'Солнце'
+  ['Elly_Houdini'] = 'Солнце',
+  ['Nikolas_Makovelli'] = 'Макарон',
+  ['Russell_Rogers'] = 'Руха'
 }
 
 function main()

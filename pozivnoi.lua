@@ -27,7 +27,7 @@ local nicks = { -- [''] = '',
   ['Aitesu_Matsumoto'] = 'Скай',
   ['Eve_Undefeated'] = 'Вино',
   ['Matthew_Busquets'] = 'Крол',
-  ['Lenny_Snart'] = 'Небо',
+  ['Lenny_Snart'] = 'Татарин',
   ['Benedict_Bradberry'] = 'Беня',
   ['Oscar_Sanchez'] = 'Тайфун',
   ['David_Lovecraft'] = 'Лав',
@@ -36,7 +36,7 @@ local nicks = { -- [''] = '',
   ['Roberto_Asaro'] = 'Слесарь',
   ['Serand_Calebron'] = 'Калибр',
   ['Sam_Finn'] = 'Задира',
-  ['Elly_Houdini'] = 'Солнце',
+  ['Elly_Houdini'] = 'Русская',
   ['Nikolas_Makovelli'] = 'Макарон',
   ['Russell_Rogers'] = 'Руха',
   ['Roberto_Karrera'] = 'Батя',
@@ -44,7 +44,8 @@ local nicks = { -- [''] = '',
   ['Marshall_Requiem'] = 'Курлык',
   ['Yuito_Nishimura'] = 'Семпай',
   ['Impressive_Blackwood'] = 'Импра',
-  ['King_Vercetti'] = 'Джамбо'
+  ['King_Vercetti'] = 'Аварец',
+  ['Ami _Jami'] = 'Котя'
 }
 
 function main()

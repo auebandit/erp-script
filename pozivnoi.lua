@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.57) 						            -- Указываем версию скрипта / FINAL
+script_version(4.58) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -14,38 +14,36 @@ local dlstatus = require('moonloader').download_status
 local nicks = { -- [''] = '',
 -- 12+
 -- Ком. состав.
-  ['Blayzex_Stoun'] = 'Медведь', -- Командир.
+  ['Blayzex_Stoun'] = 'Лав', -- Командир.
   
 -- Бойцы.
   ['Vladimir_Fibo'] = 'Ноль',
   
 -- Стажеры.
-  ['Cosmos_Kholmogorov'] = 'Афганец',
-  ['Rick_Russell'] = 'Чеченец',
-  ['Vyacheslav_Lisov'] = 'Лис',
-  ['Yarikz_Stoun'] = 'Псих',
-  ['Aitesu_Matsumoto'] = 'Скай',
-  ['Eve_Undefeated'] = 'Вино',
   ['Matthew_Busquets'] = 'Крол',
-  ['Lenny_Snart'] = 'Татарин',
-  ['Benedict_Bradberry'] = 'Беня',
-  ['Oscar_Sanchez'] = 'Тайфун',
-  ['David_Lovecraft'] = 'Лав',
+  ['Eve_Undefeated'] = 'Вино',
   ['Lucas_Stoun'] = 'Бурбон',
-  ['Jo_Bax'] = 'Бакс',
-  ['Roberto_Asaro'] = 'Слесарь',
   ['Serand_Calebron'] = 'Калибр',
+  ['Rick_Russell'] = 'Чеченец',
+  ['Oscar_Sanchez'] = 'Тайфун',
+  ['Pasha_Gould'] = 'Есаул',
+  ['Vyacheslav_Lisov'] = 'Лис',
+  ['Lenny_Snart'] = 'Татарин',
   ['Sam_Finn'] = 'Задира',
-  ['Elly_Houdini'] = 'Русская',
   ['Nikolas_Makovelli'] = 'Макарон',
-  ['Russell_Rogers'] = 'Руха',
-  ['Roberto_Karrera'] = 'Батя',
   ['Wesley_Williams'] = 'Весло',
   ['Marshall_Requiem'] = 'Курлык',
   ['Yuito_Nishimura'] = 'Семпай',
-  ['Impressive_Blackwood'] = 'Импра',
+  ['Russell_Rogers'] = 'Руха',
+  ['Ilyushka_Je'] = 'Куст',
+  ['Blayzex_Stoun'] = 'Медведь',
   ['King_Vercetti'] = 'Аварец',
-  ['Ami _Jami'] = 'Котя'
+  ['Ami_Jami'] = 'Котя',
+  ['Jo_Bax'] = 'Бакс',
+  ['Yarikz_Stoun'] = 'Псих',
+  ['Sketch_Phasewalker'] = 'Скотч',
+  ['Benedict_Bradberry'] = 'Беня',
+  ['Roberto_Asaro'] = 'Слесарь'
 }
 
 function main()

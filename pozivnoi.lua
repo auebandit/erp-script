@@ -1,7 +1,7 @@
 --Update: Обновил позывные/состав
 -- Информация о скрипте
 script_name('«Auto-Doklad»') 		                    -- Указываем имя скрипта
-script_version(4.59) 						            -- Указываем версию скрипта / FINAL
+script_version(4.60) 						            -- Указываем версию скрипта / FINAL
 script_author('Henrich_Rogge', 'Marshall_Milford', 'Andy_Fawkess') 	-- Указываем имя автора
 
 -- Библиотеки
@@ -13,38 +13,50 @@ local dlstatus = require('moonloader').download_status
 -- Позывные
 local nicks = { -- [''] = '',
 -- 12+
+
 -- Ком. состав.
-  ['Blayzex_Stoun'] = 'Лав', -- Командир.
-  
+  ['Blayzex_Stoun'] = 'Медведь', -- Командир.
+
 -- Бойцы.
   ['Vladimir_Fibo'] = 'Ноль',
   
 -- Стажеры.
-  ['Matthew_Busquets'] = 'Крол',
-  ['Eve_Undefeated'] = 'Вино',
-  ['Lucas_Stoun'] = 'Бурбон',
-  ['Serand_Calebron'] = 'Калибр',
-  ['Rick_Russell'] = 'Чеченец',
+  ['Benedict_Bradberry'] = 'Беня',
   ['Oscar_Sanchez'] = 'Тайфун',
-  ['Pasha_Gould'] = 'Есаул',
+  ['David_Lovecraft'] = 'Лав',
+  ['Lucas_Stoun'] = 'Бурбон',
+  ['Sketch_Phasewalker'] = 'Скотч',
+  ['Jo_Bax'] = 'Бакс',
+  ['Loonklage_Revolution'] = 'Мышка',
+  ['Roberto_Asaro'] = 'Слесарь',
+  ['Eve_Undefeated'] = 'Вино',
+  ['Vladimir_Fibo'] = 'Ноль',
+  ['Renya_Stoun'] = 'Татарчонок',
+  ['Rick_Russell'] = 'Чеченец',
+  ['Andrew_Midnight'] = 'Полночь',
   ['Vyacheslav_Lisov'] = 'Лис',
-  ['Lenny_Snart'] = 'Татарин',
+  ['Matthew_Busquets'] = 'Крол',
+  ['Howard_Houdini'] = 'Татарин',
   ['Sam_Finn'] = 'Задира',
+  ['Christian_Barks'] = 'Гутя',
+  ['Russell_Rogers'] = 'Руха',
   ['Nikolas_Makovelli'] = 'Макарон',
   ['Wesley_Williams'] = 'Весло',
   ['Marshall_Requiem'] = 'Курлык',
   ['Yuito_Nishimura'] = 'Семпай',
-  ['Russell_Rogers'] = 'Руха',
+  ['King_Vercetti'] = 'Аварец',
+  ['Amishka_Russell'] = 'Котя',
+  ['Pasha_Gould'] = 'Есаул',
   ['Ilyushka_Je'] = 'Куст',
   ['Blayzex_Stoun'] = 'Медведь',
-  ['King_Vercetti'] = 'Аварец',
-  ['Ami_Jami'] = 'Котя',
-  ['Loonklage_Revolution'] = 'Мыша',
-  ['Jo_Bax'] = 'Бакс',
-  ['Yarikz_Stoun'] = 'Псих',
-  ['Sketch_Phasewalker'] = 'Скотч',
-  ['Benedict_Bradberry'] = 'Беня',
-  ['Roberto_Asaro'] = 'Слесарь'
+  ['Giovanni_Russell'] = 'Матрос',
+  ['Jeremiah_Stoun'] = 'Джедай',
+  ['Abu_Sayaf'] = 'Опер',
+  ['Shwabbeazzy_Shteger'] = 'Немец', 
+  ['Angel_Kazuto'] = 'Лайт',
+  ['Angel_Holiday'] = 'Куб',
+  ['Rocket_Lattice'] = 'Ракета',  
+  ['Serand_Calebron'] = 'Калибр'
 }
 
 function main()
